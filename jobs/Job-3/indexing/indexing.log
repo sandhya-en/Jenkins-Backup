@@ -1,0 +1,41 @@
+Started by user [8mha:////4BjtBe2djfjLNbgO8ur7I8/gFvO+n7k3qH+g73iUIbS/AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL94sS8lIzKRAByom6lwgAAAA==[0msandhya
+[Wed Oct 28 11:35:41 IST 2026] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.53.0'
+ > git ls-remote --symref -- https://github.com/sandhya-en/Boardgame.git # timeout=10
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/caches/git-80968c91da003078cb69f5373acd10f3/.git # timeout=10
+Setting origin to https://github.com/sandhya-en/Boardgame.git
+ > git config remote.origin.url https://github.com/sandhya-en/Boardgame.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.53.0'
+ > git ls-remote -h -- https://github.com/sandhya-en/Boardgame.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --no-tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch prod
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: prod (still at c1c34448371bda57f8dca918c8685a48c28c7a0b)
+  Checking branch qa
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: qa (still at c1c34448371bda57f8dca918c8685a48c28c7a0b)
+  Checking branch main
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: main (still at c1c34448371bda57f8dca918c8685a48c28c7a0b)
+  Checking branch feature
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: feature (still at c1c34448371bda57f8dca918c8685a48c28c7a0b)
+  Checking branch dev
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: dev (still at c1c34448371bda57f8dca918c8685a48c28c7a0b)
+Processed 5 branches
+[Wed Oct 28 11:35:45 IST 2026] Finished branch indexing. Indexing took 3.3 sec
+Finished: SUCCESS

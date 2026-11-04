@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.2
+Build-Jdk-Spec: 11
+Specification-Title: Hashicorp Vault Pipeline Plugin
+Specification-Version: 1.4
+Implementation-Title: Hashicorp Vault Pipeline Plugin
+Implementation-Version: 1.4
+Group-Id: io.jenkins.plugins
+Short-Name: hashicorp-vault-pipeline
+Long-Name: Hashicorp Vault Pipeline Plugin
+Url: https://github.com/jenkinsci/hashicorp-vault-pipeline-plugin/
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.4
+Hudson-Version: 2.332.1
+Jenkins-Version: 2.332.1
+Plugin-Dependencies: hashicorp-vault-plugin:336.v182c0fbaaeb7
+Plugin-Developers: Phil Madden:philmadden83:philmadden83@gmail.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/hashicorp-vault-pipeline-plu
+ gin
+

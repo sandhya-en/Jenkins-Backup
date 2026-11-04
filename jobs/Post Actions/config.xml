@@ -1,0 +1,133 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1609.v8926e7962024">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2293.v6e7193cec599"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2293.v6e7193cec599">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>BUILD_TYPE</string>
+        <string>BRANCH_NAME</string>
+        <string>RUN_TESTS</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>2</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+        <removeLastBuild>false</removeLastBuild>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>BRANCH_NAME</name>
+          <description>Git branch to build</description>
+          <defaultValue>main</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.BooleanParameterDefinition>
+          <name>RUN_TESTS</name>
+          <description>Run test cases?</description>
+          <defaultValue>true</defaultValue>
+        </hudson.model.BooleanParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BUILD_TYPE</name>
+          <description>Choose the build type</description>
+          <choices>
+            <string>debug</string>
+            <string>release</string>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4395.v738456a_5da_6b_">
+    <script>pipeline {
+    agent any
+
+    tools {
+        maven &apos;maven3.9&apos;
+        jdk &apos;jdk17&apos;
+    }
+
+    parameters {
+        string(
+            name: &apos;BRANCH_NAME&apos;,
+            defaultValue: &apos;main&apos;,
+            description: &apos;Git branch to build&apos;
+        )
+
+        booleanParam(
+            name: &apos;RUN_TESTS&apos;,
+            defaultValue: true,
+            description: &apos;Run test cases?&apos;
+        )
+
+        choice(
+            name: &apos;BUILD_TYPE&apos;,
+            choices: [&apos;debug&apos;, &apos;release&apos;],
+            description: &apos;Choose the build type&apos;
+        )
+    }
+
+    stages {
+        stage(&apos;Git Checkout&apos;) {
+            steps {
+                git branch: params.BRANCH_NAME,
+                    url: &apos;https://github.com/sandhya-en/Boardgame.git&apos;
+            }
+        }
+
+        stage(&apos;Compile&apos;) {
+            steps {
+                echo &apos;Compiling the project&apos;
+                sh &apos;mvn compile&apos;
+            }
+        }
+
+        stage(&apos;Test&apos;) {
+            when {
+                expression {
+                    return params.RUN_TESTS
+                }
+            }
+            steps {
+                echo &apos;Running test cases&apos;
+                sh &apos;mvn test&apos;
+            }
+        }
+
+        stage(&apos;Build&apos;) {
+            steps {
+                echo &quot;Build type selected: ${params.BUILD_TYPE}&quot;
+                sh &quot;mvn package -P${params.BUILD_TYPE} -DskipTests&quot;
+            }
+        }
+    }
+
+    post {
+        success {
+            echo &apos;Pipeline completed successfully!&apos;
+        }
+        failure {
+            echo &apos;Pipeline failed. Check the console output.&apos;
+        }
+        always {
+            echo &apos;Pipeline execution finished.&apos;
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

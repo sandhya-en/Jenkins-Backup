@@ -1,0 +1,8 @@
+Started by user [8mha:////4BjtBe2djfjLNbgO8ur7I8/gFvO+n7k3qH+g73iUIbS/AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL94sS8lIzKRAByom6lwgAAAA==[0msandhya
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/A1
+[A1] $ /bin/sh -xe /tmp/jenkins9378703083335554306.sh
++ echo Hi Sandhya
+Hi Sandhya
+Triggering a new build of [8mha:////4FvaoIvg2HYYGnrwN0Yw4kxqU6hsSrjyKtjnmUa/JU/NAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYO/az8JH0nQ30ANU6inL0AAAA=[0mB1
+Finished: SUCCESS

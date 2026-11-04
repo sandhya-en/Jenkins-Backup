@@ -1,0 +1,92 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1609.v8926e7962024">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2293.v6e7193cec599"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2293.v6e7193cec599">
+      <jobProperties/>
+      <triggers/>
+      <parameters>
+        <string>Env</string>
+      </parameters>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <jenkins.model.BuildDiscarderProperty>
+      <strategy class="hudson.tasks.LogRotator">
+        <daysToKeep>-1</daysToKeep>
+        <numToKeep>1</numToKeep>
+        <artifactDaysToKeep>-1</artifactDaysToKeep>
+        <artifactNumToKeep>-1</artifactNumToKeep>
+        <removeLastBuild>false</removeLastBuild>
+      </strategy>
+    </jenkins.model.BuildDiscarderProperty>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>Env</name>
+          <description>Environment</description>
+          <choices>
+            <string>Dev</string>
+            <string>QA</string>
+            <string>Prod</string>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@4395.v738456a_5da_6b_">
+    <script>
+pipeline {
+    agent any
+
+    parameters {
+        choice(
+            name: &apos;Env&apos;,
+            choices: [&apos;Dev&apos;, &apos;QA&apos;, &apos;Prod&apos;],
+            description: &apos;Environment&apos;
+        )
+    }
+
+    stages {
+        stage(&apos;Hello&apos;) {
+            steps {
+                echo &apos;Hello&apos;
+            }
+        }
+
+        stage(&apos;Deploy&apos;) {
+            steps {
+                script {
+                    if (params.Env == &apos;Dev&apos;) {
+                        sh &apos;echo Dev&apos;
+                    }
+                    else if (params.Env == &apos;QA&apos;) {
+                        sh &apos;echo QA&apos;
+                    }
+                    else {
+                        sh &apos;echo Prod&apos;
+                    }
+                }
+
+                echo &apos;mvn test&apos;
+            }
+        }
+
+        stage(&apos;Build&apos;) {
+            steps {
+                echo &apos;mvn package&apos;
+            }
+        }
+    }
+}
+
+    
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

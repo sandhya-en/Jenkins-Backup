@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.6
+Java-Version: 21
+Build-Jdk-Spec: 21
+Specification-Title: Docker plugin
+Specification-Version: 0.0
+Implementation-Title: Docker plugin
+Implementation-Version: 1337.v3ca_fd1b_b_25ef
+Group-Id: io.jenkins.docker
+Artifact-Id: docker-plugin
+Short-Name: docker-plugin
+Long-Name: Docker plugin
+Url: https://github.com/jenkinsci/docker-plugin
+Plugin-Version: 1337.v3ca_fd1b_b_25ef
+Hudson-Version: 2.555.3
+Jenkins-Version: 2.555.3
+Plugin-Dependencies: commons-lang3-api:3.21.0-122.v6a_ea_4fd34049,ionico
+ ns-api:94.vcc3065403257,instance-identity:203.v15e81a_1b_7a_38,workflow
+ -api:1413.v2ff1a_5e720fa_;resolution:=optional,workflow-step-api:724.v5
+ 38c2362b_dfb_;resolution:=optional,workflow-support:1015.v785e5a_b_b_8b
+ _22;resolution:=optional,bouncycastle-api:2.30.1.86.1-306.vfc711fa_36d5
+ f,cloud-stats:423.v63f017a_f582c,docker-commons:477.v289085a_b_6896,doc
+ ker-java-api:3.7.1-136.v5d70f77a_c3d6,durable-task:686.v80ff80875b_82,j
+ ackson2-api:2.22.3-447.v6a_93ce7d2c82,ssh-slaves:3.1097.v868116049892,t
+ oken-macro:477.vd4f0dc3cb_cf1,pipeline-model-extensions:2.2293.v6e7193c
+ ec599;resolution:=optional
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/docker-plugin
+ .git
+Plugin-ScmTag: 3cafd1bb25ef7cfc40d011a017ff991592a181be
+Plugin-ScmUrl: https://github.com/jenkinsci/docker-plugin
+Implementation-Build: 3cafd1bb25ef7cfc40d011a017ff991592a181be
+

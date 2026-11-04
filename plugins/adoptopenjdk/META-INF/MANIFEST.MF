@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.6
+Java-Version: 17
+Build-Jdk-Spec: 21
+Specification-Title: Eclipse Temurin installer Plugin
+Specification-Version: 0.0
+Implementation-Title: Eclipse Temurin installer Plugin
+Implementation-Version: 167.vf71ff2140e23
+Group-Id: io.jenkins.plugins
+Artifact-Id: adoptopenjdk
+Short-Name: adoptopenjdk
+Long-Name: Eclipse Temurin installer Plugin
+Url: https://github.com/jenkinsci/adoptopenjdk-plugin
+Plugin-Version: 167.vf71ff2140e23
+Hudson-Version: 2.479.3
+Jenkins-Version: 2.479.3
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/adoptopenjdk-
+ plugin.git
+Plugin-ScmTag: f71ff2140e231ff0187db73b4a69d387b862e99e
+Plugin-ScmUrl: https://github.com/jenkinsci/adoptopenjdk-plugin
+Implementation-Build: f71ff2140e231ff0187db73b4a69d387b862e99e
+

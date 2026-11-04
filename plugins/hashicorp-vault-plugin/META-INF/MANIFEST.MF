@@ -1,0 +1,36 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.6
+Java-Version: 17
+Build-Jdk-Spec: 21
+Specification-Title: HashiCorp Vault Plugin
+Specification-Version: 0.0
+Specification-Vendor: Datapipe, Inc.
+Implementation-Title: HashiCorp Vault Plugin
+Implementation-Version: 384.vda_86ec66c537
+Implementation-Vendor: Datapipe, Inc.
+Group-Id: com.datapipe.jenkins.plugins
+Artifact-Id: hashicorp-vault-plugin
+Short-Name: hashicorp-vault-plugin
+Long-Name: HashiCorp Vault Plugin
+Url: https://github.com/jenkinsci/hashicorp-vault-plugin
+Compatible-Since-Version: 2.0.0
+Plugin-Version: 384.vda_86ec66c537
+Hudson-Version: 2.479.3
+Jenkins-Version: 2.479.3
+Plugin-Dependencies: commons-lang3-api:3.17.0-87.v5cf526e63b_8b_,commons
+ -text-api:1.13.0-153.v91dcd89e2a_22,configuration-as-code:1947.v7d33fe2
+ 3569c;resolution:=optional,aws-java-sdk-minimal:1.12.780-480.v4a_081912
+ 1a_9e;resolution:=optional,workflow-api:1366.vf1fb_e1a_f6b_22,workflow-
+ step-api:700.v6e45cb_a_5a_a_21,cloudbees-folder:6.999.v42253c105443,cre
+ dentials-binding:687.v619cb_15e923f,credentials:1413.va_51c53703df1,ssh
+ -credentials:355.v9b_e5b_cde5003,structs:343.vdcf37b_a_c81d5
+Plugin-Developers: Joseph Petersen:casz:,Peter A. Tierno:ptierno:ptierno
+ @datapipe.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/hashicorp-vau
+ lt-plugin.git
+Plugin-ScmTag: da86ec66c537e984c1a7fab1743d575b40667508
+Plugin-ScmUrl: https://github.com/jenkinsci/hashicorp-vault-plugin
+Implementation-Build: da86ec66c537e984c1a7fab1743d575b40667508
+

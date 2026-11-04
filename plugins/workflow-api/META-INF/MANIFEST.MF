@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.6
+Java-Version: 17
+Build-Jdk-Spec: 21
+Specification-Title: Pipeline: API
+Specification-Version: 0.0
+Implementation-Title: Pipeline: API
+Implementation-Version: 1429.v7a_1b_efb_a_f7c5
+Group-Id: org.jenkins-ci.plugins.workflow
+Artifact-Id: workflow-api
+Short-Name: workflow-api
+Long-Name: Pipeline: API
+Url: https://github.com/jenkinsci/workflow-api-plugin
+Plugin-Version: 1429.v7a_1b_efb_a_f7c5
+Hudson-Version: 2.541.3
+Jenkins-Version: 2.541.3
+Plugin-Dependencies: workflow-step-api:724.v538c2362b_dfb_,scm-api:728.v
+ c30dcf7a_0df5
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/workflow-api-
+ plugin.git
+Plugin-ScmTag: 7a1befbaf7c565fdce8f62d6742d6884d8b925f4
+Plugin-ScmUrl: https://github.com/jenkinsci/workflow-api-plugin
+Implementation-Build: 7a1befbaf7c565fdce8f62d6742d6884d8b925f4
+

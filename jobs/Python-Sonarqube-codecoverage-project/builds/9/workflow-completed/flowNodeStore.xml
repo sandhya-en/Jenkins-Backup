@@ -1,0 +1,920 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<linked-hash-map>
+  <entry>
+    <string>2</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="org.jenkinsci.plugins.workflow.graph.FlowStartNode" plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+        <parentIds/>
+        <id>2</id>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386151</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>3</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>2</string>
+        </parentIds>
+        <id>3</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386324</startTime>
+        </wf.a.TimingAction>
+        <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl plugin="workflow-durable-task-step@1479.v56e587f413a_7">
+          <id>150</id>
+        </org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl>
+        <s.a.WorkspaceActionImpl>
+          <node></node>
+          <path>/var/lib/jenkins/workspace/Python-Sonarqube-codecoverage-project</path>
+          <labels class="sorted-set"/>
+        </s.a.WorkspaceActionImpl>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>4</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>3</string>
+        </parentIds>
+        <id>4</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386349</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>5</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepAtomNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>4</string>
+        </parentIds>
+        <id>5</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.ToolStep</descriptorId>
+      </node>
+      <actions>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>name</string>
+              <string>sonar-scanner</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386368</startTime>
+        </wf.a.TimingAction>
+        <s.a.LogStorageAction/>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>6</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>5</string>
+        </parentIds>
+        <id>6</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>overrides</string>
+              <list>
+                <string>SCANNER_HOME=/var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/sonar-scanner</string>
+              </list>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386390</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>7</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>6</string>
+        </parentIds>
+        <id>7</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386394</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>8</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>7</string>
+        </parentIds>
+        <id>8</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>name</string>
+              <string>Git Checkout</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386415</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>9</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>8</string>
+        </parentIds>
+        <id>9</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.LabelAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <displayName>Git Checkout</displayName>
+        </wf.a.LabelAction>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386418</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>10</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepAtomNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>9</string>
+        </parentIds>
+        <id>10</id>
+        <descriptorId>jenkins.plugins.git.GitStep</descriptorId>
+      </node>
+      <actions>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>branch</string>
+              <string>main</string>
+            </entry>
+            <entry>
+              <string>url</string>
+              <string>https://github.com/sandhya-en/Python-Project.git</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577386444</startTime>
+        </wf.a.TimingAction>
+        <s.a.LogStorageAction/>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>11</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>10</string>
+        </parentIds>
+        <id>11</id>
+        <startId>9</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577387689</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>12</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>11</string>
+        </parentIds>
+        <id>12</id>
+        <startId>8</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577387700</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>13</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>12</string>
+        </parentIds>
+        <id>13</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>name</string>
+              <string>Setup Virtual Environment</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577387708</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>14</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>13</string>
+        </parentIds>
+        <id>14</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.LabelAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <displayName>Setup Virtual Environment</displayName>
+        </wf.a.LabelAction>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577387710</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>15</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepAtomNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>14</string>
+        </parentIds>
+        <id>15</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+      </node>
+      <actions>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>script</string>
+              <string>
+            set -eu
+
+            echo &quot;Creating Python virtual environment&quot;
+
+            rm -rf venv
+
+            python3 -m venv venv
+
+            echo &quot;Installing dependencies&quot;
+
+            ./venv/bin/python -m pip install --upgrade pip
+
+            ./venv/bin/python -m pip install -r requirements.txt
+
+            echo &quot;Dependencies installed successfully&quot;
+        </string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577387722</startTime>
+        </wf.a.TimingAction>
+        <s.a.LogStorageAction/>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>16</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>15</string>
+        </parentIds>
+        <id>16</id>
+        <startId>14</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577396682</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>17</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>16</string>
+        </parentIds>
+        <id>17</id>
+        <startId>13</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577396698</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>18</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>17</string>
+        </parentIds>
+        <id>18</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>name</string>
+              <string>Test</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577396708</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>19</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>18</string>
+        </parentIds>
+        <id>19</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.LabelAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <displayName>Test</displayName>
+        </wf.a.LabelAction>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577396713</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>20</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepAtomNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>19</string>
+        </parentIds>
+        <id>20</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+      </node>
+      <actions>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>script</string>
+              <string>
+                    set -eu
+
+                    echo &quot;Running Python tests with coverage&quot;
+
+                    ./venv/bin/pytest                         --cov=app                         --cov-report=xml:coverage.xml                         --cov-report=term-missing                         --disable-warnings
+                </string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577396738</startTime>
+        </wf.a.TimingAction>
+        <s.a.LogStorageAction/>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>21</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>20</string>
+        </parentIds>
+        <id>21</id>
+        <startId>19</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577397926</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>22</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>21</string>
+        </parentIds>
+        <id>22</id>
+        <startId>18</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577397954</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>23</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>22</string>
+        </parentIds>
+        <id>23</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>name</string>
+              <string>Sonar</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577397978</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>24</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>23</string>
+        </parentIds>
+        <id>24</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.LabelAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <displayName>Sonar</displayName>
+        </wf.a.LabelAction>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577397981</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>25</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>24</string>
+        </parentIds>
+        <id>25</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.CoreWrapperStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>delegate</string>
+              <org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable plugin="structs@362.va_b_695ef4fdf9">
+                <symbol>withSonarQubeEnv</symbol>
+                <arguments class="tree-map">
+                  <entry>
+                    <string>&lt;anonymous&gt;</string>
+                    <string>sonarqube</string>
+                  </entry>
+                </arguments>
+              </org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577398007</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>26</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>25</string>
+        </parentIds>
+        <id>26</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.CoreWrapperStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577398034</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>27</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepAtomNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>26</string>
+        </parentIds>
+        <id>27</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+      </node>
+      <actions>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>script</string>
+              <string>
+                        set -eu
+
+                        echo &quot;Starting SonarQube analysis&quot;
+
+                        $SCANNER_HOME/bin/sonar-scanner                             -Dsonar.projectKey=Python-project                             -Dsonar.projectName=Python-project                             -Dsonar.sources=.                             -Dsonar.exclusions=venv/**                             -Dsonar.python.coverage.reportPaths=coverage.xml
+                    </string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577398046</startTime>
+        </wf.a.TimingAction>
+        <s.a.LogStorageAction/>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>28</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>27</string>
+        </parentIds>
+        <id>28</id>
+        <startId>26</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421345</startTime>
+        </wf.a.TimingAction>
+        <s.a.LogStorageAction/>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>29</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>28</string>
+        </parentIds>
+        <id>29</id>
+        <startId>25</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421488</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>30</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>29</string>
+        </parentIds>
+        <id>30</id>
+        <startId>24</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421545</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>31</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>30</string>
+        </parentIds>
+        <id>31</id>
+        <startId>23</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421561</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>32</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>31</string>
+        </parentIds>
+        <id>32</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <s.a.LogStorageAction/>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>name</string>
+              <string>Declarative: Post Actions</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421596</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>33</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepStartNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>32</string>
+        </parentIds>
+        <id>33</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.support.steps.StageStep</descriptorId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.LabelAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <displayName>Declarative: Post Actions</displayName>
+        </wf.a.LabelAction>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421603</startTime>
+        </wf.a.TimingAction>
+        <wf.a.TagsAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <tags>
+            <entry>
+              <string>SYNTHETIC_STAGE</string>
+              <string>POST</string>
+            </entry>
+          </tags>
+        </wf.a.TagsAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>34</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepAtomNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>33</string>
+        </parentIds>
+        <id>34</id>
+        <descriptorId>org.jenkinsci.plugins.workflow.steps.EchoStep</descriptorId>
+      </node>
+      <actions>
+        <cps.a.ArgumentsActionImpl plugin="workflow-cps@4395.v738456a_5da_6b_">
+          <arguments>
+            <entry>
+              <string>message</string>
+              <string>Python CI pipeline execution completed</string>
+            </entry>
+          </arguments>
+          <sensitiveVariables/>
+          <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+        </cps.a.ArgumentsActionImpl>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421658</startTime>
+        </wf.a.TimingAction>
+        <s.a.LogStorageAction/>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>35</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>34</string>
+        </parentIds>
+        <id>35</id>
+        <startId>33</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421674</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>36</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>35</string>
+        </parentIds>
+        <id>36</id>
+        <startId>32</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421691</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>37</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>36</string>
+        </parentIds>
+        <id>37</id>
+        <startId>7</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421699</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>38</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>37</string>
+        </parentIds>
+        <id>38</id>
+        <startId>6</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421711</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>39</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>38</string>
+        </parentIds>
+        <id>39</id>
+        <startId>4</startId>
+      </node>
+      <actions>
+        <wf.a.BodyInvocationAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5"/>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421720</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>40</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="cps.n.StepEndNode" plugin="workflow-cps@4395.v738456a_5da_6b_">
+        <parentIds>
+          <string>39</string>
+        </parentIds>
+        <id>40</id>
+        <startId>3</startId>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421746</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+  <entry>
+    <string>41</string>
+    <Tag plugin="workflow-support@1015.v785e5a_b_b_8b_22">
+      <node class="org.jenkinsci.plugins.workflow.graph.FlowEndNode" plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+        <parentIds>
+          <string>40</string>
+        </parentIds>
+        <id>41</id>
+        <startId>2</startId>
+        <result>
+          <name>SUCCESS</name>
+          <ordinal>0</ordinal>
+          <color>BLUE</color>
+          <completeBuild>true</completeBuild>
+        </result>
+      </node>
+      <actions>
+        <wf.a.TimingAction plugin="workflow-api@1429.v7a_1b_efb_a_f7c5">
+          <startTime>1793577421756</startTime>
+        </wf.a.TimingAction>
+      </actions>
+    </Tag>
+  </entry>
+</linked-hash-map>

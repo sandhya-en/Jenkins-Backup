@@ -1,0 +1,1 @@
+{"stages":[{"id":"6","name":"Test Vault Integration","children":[],"state":"success","type":"STAGE","title":"Test Vault Integration","isSequential":false,"synthetic":false,"placeholder":false,"pauseDurationMillis":0,"totalDurationMillis":487,"startTimeMillis":1793472474441,"agent":"built-in","url":"/job/vault-integration-test/5/stages/?selected-node=6"}],"complete":true}

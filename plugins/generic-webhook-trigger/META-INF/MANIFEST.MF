@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.3
+Build-Jdk-Spec: 25
+Specification-Title: Generic Webhook Trigger Plugin
+Specification-Version: 2.4
+Implementation-Title: Generic Webhook Trigger Plugin
+Implementation-Version: 2.4.3
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: generic-webhook-trigger
+Short-Name: generic-webhook-trigger
+Long-Name: Generic Webhook Trigger Plugin
+Url: https://github.com/jenkinsci/generic-webhook-trigger-plugin
+Plugin-Version: 2.4.3
+Hudson-Version: 2.479.3
+Jenkins-Version: 2.479.3
+Plugin-Dependencies: gson-api:2.13.1-139.v4569c2ef303f,json-path-api:2.9
+ .0-148.v22a_7ffe323ce,credentials:1415.v831096eb_5534,plain-credentials
+ :199.v9f8e1f741799,structs:350.v3b_30f09f2363
+Plugin-Developers: Tomas Bjerre:tomasbjerre:tomas.bjerre85@gmail.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:ssh://github.com:jenkinsci/generic-webhook
+ -trigger-plugin.git
+Plugin-ScmTag: generic-webhook-trigger-2.4.3
+Plugin-ScmUrl: https://github.com/jenkinsci/generic-webhook-trigger-plug
+ in
+Implementation-Build: b5987c300d5487c7d08223aac836f4900b48e765
+

@@ -1,0 +1,1 @@
+{"stages":[{"id":"6","name":"Hello","children":[],"state":"success","type":"STAGE","title":"Hello","isSequential":false,"synthetic":false,"placeholder":false,"pauseDurationMillis":0,"totalDurationMillis":97,"startTimeMillis":1793457320908,"agent":"jenkins-agent-00008pka8quwj","url":"/job/Docker%20as%20slave/5/stages/?selected-node=6"}],"complete":true}

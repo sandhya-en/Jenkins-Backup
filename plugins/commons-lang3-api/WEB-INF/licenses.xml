@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<l:dependencies xmlns:l='licenses' groupId='io.jenkins.plugins' artifactId='commons-lang3-api' version='3.21.0-122.v6a_ea_4fd34049'><l:dependency name='commons-lang3 v3.x Jenkins API Plugin' groupId='io.jenkins.plugins' artifactId='commons-lang3-api' version='3.21.0-122.v6a_ea_4fd34049' url='https://github.com/jenkinsci/commons-lang3-api-plugin'><l:description>The Jenkins Plugins Parent POM Project</l:description><l:license name='Apache-2.0' url='https://opensource.org/licenses/Apache-2.0'/></l:dependency><l:dependency name='Apache Commons Lang' groupId='org.apache.commons' artifactId='commons-lang3' version='3.21.0' url='https://commons.apache.org/proper/commons-lang/'><l:description>Apache Commons Lang is a package of Java utility classes for the Java lang packages,
+  classes that could be considered standard to justify their existence in java.lang.
+
+  The code is tested using the latest revision of the JDK for supported LTS releases: 8, 11, 17, 21, and 25.
+  See https://github.com/apache/commons-lang/blob/master/.github/workflows/maven.yml
+
+  Please ensure your build environment is up-to-date and kindly report any build issues.
+
+  Starting with Commons Lang 3.9, we target Java 8 and use those features.
+
+  For advice on upgrading from 2.x to 3.x, see https://commons.apache.org/lang/article3_0.html</l:description><l:license name='Apache-2.0' url='https://www.apache.org/licenses/LICENSE-2.0.txt'/></l:dependency></l:dependencies>

@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.6
+Java-Version: 17
+Build-Jdk-Spec: 21
+Specification-Title: Maven Integration plugin
+Specification-Version: 3.28
+Implementation-Title: Maven Integration plugin
+Implementation-Version: 3.28
+Plugin-Class: hudson.maven.PluginImpl
+Group-Id: org.jenkins-ci.main
+Artifact-Id: maven-plugin
+Short-Name: maven-plugin
+Long-Name: Maven Integration plugin
+Url: https://github.com/jenkinsci/maven-plugin
+Plugin-Version: 3.28
+Hudson-Version: 2.479.3
+Jenkins-Version: 2.479.3
+Plugin-Dependencies: commons-lang3-api:3.18.0-98.v3a_674c06072d,oss-symb
+ ols-api:356.v2da_d59a_3742b_,apache-httpcomponents-client-4-api:4.5.14-
+ 269.vfa_2321039a_83,javadoc:280.v050b_5c849f69,jsch:0.2.16-95.v3eecb_55
+ fa_b_78,jsoup:1.21.1-52.v96e4041b_60fd,junit:1335.v6b_a_a_e18534e1,mail
+ er:489.vd4b_25144138f,token-macro:444.v52de7e9c573d;resolution:=optiona
+ l
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/maven-plugin.
+ git
+Plugin-ScmTag: maven-plugin-3.28
+Plugin-ScmUrl: https://github.com/jenkinsci/maven-plugin
+Implementation-Build: d0ee87f948113bd51d122568266444719ac5097c
+

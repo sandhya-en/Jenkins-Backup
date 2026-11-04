@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.6
+Java-Version: 17
+Build-Jdk-Spec: 21
+Specification-Title: SnakeYAML Engine API Plugin
+Specification-Version: 3.2
+Implementation-Title: SnakeYAML Engine API Plugin
+Implementation-Version: 3.2-18.v885ed7ff698f
+Group-Id: io.jenkins.plugins
+Artifact-Id: snakeyaml-engine-api
+Short-Name: snakeyaml-engine-api
+Long-Name: SnakeYAML Engine API Plugin
+Url: https://github.com/jenkinsci/snakeyaml-engine-api-plugin
+Plugin-Version: 3.2-18.v885ed7ff698f
+Hudson-Version: 2.504.1
+Jenkins-Version: 2.504.1
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+Plugin-License-Name: The Apache Software License, Version 2.0
+Plugin-License-Url: https://www.apache.org/licenses/LICENSE-2.0.txt
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/snakeyaml-eng
+ ine-api-plugin
+Plugin-ScmTag: 885ed7ff698f349e55aac72ae9d9aae3782328cd
+Plugin-ScmUrl: https://github.com/jenkinsci/snakeyaml-engine-api-plugin
+Implementation-Build: 885ed7ff698f349e55aac72ae9d9aae3782328cd
+

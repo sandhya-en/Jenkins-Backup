@@ -1,0 +1,9 @@
+Started by upstream project "[8mha:////4JheN5rIHU7PphPpjKy6pgZfFW7b6bWXnKyzyr2bW1RhAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYO/az8JH1HQ30AbPDknr0AAAA=[0mA1" build number [8mha:////4C5CON13LyqQ5zANOK9sfYtf1lMIeKwfq5N+bcuaQPRMAAAAlB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBk79rPwkfUdDfUMAxCFOlb4AAAA=[0m1
+originally caused by:
+ Started by user [8mha:////4BjtBe2djfjLNbgO8ur7I8/gFvO+n7k3qH+g73iUIbS/AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL94sS8lIzKRAByom6lwgAAAA==[0msandhya
+Running as SYSTEM
+Building on the built-in node in workspace /var/lib/jenkins/workspace/B1
+[B1] $ /bin/sh -xe /tmp/jenkins15849094043076450955.sh
++ echo Hi from Sandhya
+Hi from Sandhya
+Finished: SUCCESS
